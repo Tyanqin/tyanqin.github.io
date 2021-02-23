@@ -1,0 +1,70 @@
+.fixed-nav-wrap{
+    position: fixed;
+    width: 90px;
+    height: 400px;
+    top:70px;
+    right: 0;
+    bottom: 0;
+    /*left:-2rem;*/
+    background-color: aqua;
+    /*font-size: 0.20rem;*/
+    padding-left: 10px;
+    z-index: 99998;
+}
+
+.fixed-nav-wrap-div{
+    position: absolute;
+    width: 97%;
+    height: 50%;
+    right: 0;
+    left:5px;
+    top:90px;
+    margin: auto;
+    /*background-color: red;*/
+}
+
+.level_1_menu_ul,
+.level_2_menu_ul{
+    margin-left: 0.2rem;
+    color:black;
+}
+
+.level_1_menu > span{
+    color:#000000;
+}
+
+.level_2_menu_ul > a{
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+/*关闭菜单样式*/
+.close_menu{
+    height: 25px;
+    overflow: hidden;
+}
+/*=======================导航条下的触发块样式==============================*/
+.in-addition{
+    z-index: 998;
+    position: fixed;
+    width: 2rem;
+    height: 80%;
+    right: 0;
+    bottom: 0;
+    left:0;
+    top:350px;
+    opacity: 0;
+    background-color: cyan;
+}
+.out-addition{
+    z-index: 999;
+}
+
+.fixed-nav-wrap-div div{
+    background-color: pink;
+}
