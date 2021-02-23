@@ -16,6 +16,11 @@ $(function(){
         // scrollBar:true,                 //显示滚动条
         // scrollOverflow:true,            //内容超过一屏幕显示滚动条
         // navigation:true,                //是否显示导航原点
+
+        afterLoad:function( anchorLink , index){
+              console.log("anchorLink=====>   ",anchorLink)
+              console.log("index=====>   ",index)
+        },
     });
 
 });
