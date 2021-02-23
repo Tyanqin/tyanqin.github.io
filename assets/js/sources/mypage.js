@@ -4,7 +4,7 @@ $(function(){
         recordHistory:true,                //是否记录历史，默认为true,浏览器的前进后退可导航。若autoScrolling:false,那么这个属性将被关闭
         menu:true,
         loopBottom:false,                  //滚动到最底部后是否滚回顶部
-        anchors:['economic', 'two', 'three', 'four'],//anchors定义锚链接，默认为[]
+        anchors:['one', 'two', 'three', 'four'],//anchors定义锚链接，默认为[]
         resize:true,
         licenseKey:'YOUR_KEY_HERE',
         css3:true,

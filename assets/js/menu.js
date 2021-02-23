@@ -1,5 +1,4 @@
 window.onload = function(){
-    alert(123)
     let level_1_menus = document.querySelectorAll(".level_1_menu");
     let level_2_menus = document.querySelectorAll(".level_2_menu")
     menuControl(level_1_menus,"close_menu")
