@@ -1,4 +1,8 @@
 $(function(){
+
+    let navigationUl_Li =document.querySelectorAll(".navigation-ul > li");
+    navigationUl_Li[0].style.borderBottom = "2px solid black"    //初始化第一个元素的背景设置
+
     $('#fullpage').fullpage({           //接受JSON对象
         navigation: true,
         recordHistory:true,                //是否记录历史，默认为true,浏览器的前进后退可导航。若autoScrolling:false,那么这个属性将被关闭
@@ -17,10 +21,21 @@ $(function(){
         // scrollOverflow:true,            //内容超过一屏幕显示滚动条
         // navigation:true,                //是否显示导航原点
 
-        afterLoad:function( anchorLink , index){
-              console.log("anchorLink=====>   ",anchorLink)
-              console.log("index=====>   ",index)
+        afterLoad:function(anchorLink,index){     //当点击导航时，将点击的导航变色同时清空其它的导航背景色
+            for(let i = 0;i < navigationUl_Li.length;i++){
+                navigationUl_Li[i].style.borderBottom = ""
+                if(index+"" === navigationUl_Li[i].id+""){
+                    navigationUl_Li[i].style.borderBottom = "2px solid black"
+                }
+            }
         },
     });
+
+
+
+
+
+
+
 
 });
