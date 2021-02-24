@@ -20,7 +20,6 @@
     width: 90%;
     height: 50px;
     z-index: 99999;
-
 }
 
 .navigation-wrapper-box >div:nth-child(1) {
@@ -28,7 +27,7 @@
     height: 50px;
 }
 .navigation-wrapper-box >div:nth-child(1)> span{
-    font-size: 32px;
+    font-size: 40px;
     width: 500px;
     line-height: 50px;
     cursor:pointer;
