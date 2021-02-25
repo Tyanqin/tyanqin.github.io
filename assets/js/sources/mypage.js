@@ -3,7 +3,7 @@ $(function(){
     let navigationUl_Li = document.querySelectorAll(".navigation-ul > li");
     let navigationWrapper = document.querySelector(".navigation-wrapper")
     navigationWrapper.style.opacity = "0"                        //初始化导航栏透明度为0
-    navigationUl_Li[0].style.borderBottom = "2px solid black"    //初始化第一个元素的背景设置
+    navigationUl_Li[0].style.background = "#EEEEEE"    //初始化第一个元素的背景设置
 
     $('#fullpage').fullpage({           //接受JSON对象
         recordHistory:true,                //是否记录历史，默认为true,浏览器的前进后退可导航。若autoScrolling:false,那么这个属性将被关闭
@@ -14,7 +14,7 @@ $(function(){
         licenseKey:'YOUR_KEY_HERE',
         css3:true,
         fitToSection:true,                 //设置是否自适应整个窗口的空间，默认值：true
-        sectionsColor:['#FFFFFF', 'pink', 'green', 'orange'],//为每个section设置background-color属性
+        sectionsColor:['#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF'],//为每个section设置background-color属性
         // scrollingSpeed:700,
         paddingTop:"48px",
         controlArrows:false,               //隐藏水平箭头
@@ -30,9 +30,9 @@ $(function(){
             }
 
             for(let i = 0;i < navigationUl_Li.length;i++){
-                navigationUl_Li[i].style.borderBottom = ""
+                navigationUl_Li[i].style.background = ""
                 if(index+"" === navigationUl_Li[i].id+""){
-                    navigationUl_Li[i].style.borderBottom = "2px solid black"
+                    navigationUl_Li[i].style.background = "#EEEEEE"
                 }
             }
         },
