@@ -21,7 +21,7 @@
 }
 
 .backend-content-list ul{
-    width: 80%;
+    width: 98%;
     height: 700px;
     /*background: #db8992;*/
     margin-top: 8px;
@@ -48,7 +48,7 @@
 }
 
 .backend-content-list ul li .content{
-    width: 75%;
+    width: 78%;
     height: 70px;
     /*background: cornsilk;*/
     float:left;
@@ -62,7 +62,7 @@
 }
 
 .backend-content-list ul li .date{
-    width: 75%;
+    width: 78%;
     height: 30px;
     float: left;
     line-height: 30px;
@@ -101,12 +101,15 @@
     margin-bottom: 5px;
 }
 .backend-navigation .link-list li{
-    margin: 0 0 20px 0;
-    text-align: center;
+    margin: 0 0 20px 20px;
     text-overflow:ellipsis;
     word-break:break-all;
     word-wrap:break-word;
     overflow: hidden;
+}
+.backend-navigation .link-list li span{
+    font-size: 20px;
+    color:#000;
 }
 .backend-navigation .link-list li a{
     font-family: Georgia,Times New Roman,Times,Songti SC,serif;
@@ -153,7 +156,7 @@
 
 .link-more-box>a>div{
     float: right;
-    margin: 5px 120px 0 0;
+    margin: 5px 127px 0 0;
 }
 
 .link-more-box>a>div>span{
