@@ -27,8 +27,11 @@ $(function(){
         afterLoad:function(anchorLink,index){     //当点击导航时，将点击的导航变色同时清空其它的导航背景色
             if(index+"" !== "1"){
                 navigationWrapper.style.opacity = "1"  //当导航下标不等于1时，显示导航栏
+                updateFlag(false)
             }else{
                 navigationWrapper.style.opacity = "0" //当导航下标为1时，隐藏导航栏
+                updateFlag(true)
+                startSakura()
             }
 
             for(let i = 0;i < navigationUl_Li.length;i++){
