@@ -1,4 +1,4 @@
-//樱花
+//樱花飘落
 
 var stop, staticx,flag = true;
 var img = new Image();
