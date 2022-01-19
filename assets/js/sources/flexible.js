@@ -15,7 +15,7 @@
   // set 1rem = viewWidth / 10
   //将页面分成10等份
   function setRemUnit() {
-    var rem = docEl.clientWidth / 20;
+    var rem = docEl.clientWidth / 16;
     docEl.style.fontSize = rem + "px";
   }
 

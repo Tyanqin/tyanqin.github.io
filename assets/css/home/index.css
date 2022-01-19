@@ -1,8 +1,86 @@
-#box{
+#home_box{
     width: 100%;
-    height: 4rem;
-    background: pink;
+    height: 20rem;
+    background-color: #FDFDFD;
     font-size: 0.16rem;
-    font-weight: bold;
+    /*font-weight: bold;*/
+
+}
+#home_sentence_box{
+    width: 80%;
+    height: 5rem;
+    /*background-color: #1ebdd1;*/
+}
+
+#home_sentence_box > div{
+    width: 50%;
+    margin-top: 50px;
+    /*background-color: #897cad;*/
+    text-align: center;
+}
+
+#home_sentence_box > div > p{
+    margin-top: 10px;
+    /*background-color: #47D3E5;*/
+    line-height: 50px;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#home_nav{
+    width: 100%;
+    height: 0.8rem;
+    background: green;
+}
+
+#home_nav > ul{
+    width: 90%;
+    height: 0.8rem;
+    background: #47D3E5;
+
+}
+
+#home_nav > ul > li{
+    display: inline-block;
+    margin-right: 10%;
+    margin-top: 2%;
+    color:#404040;
+}
+
+#home_nav > ul > li > a{
+    color:#404040;
+}
+
+
+
+
+
+.pub_abs{
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.pub_rel{
+    position: relative;
 }
 
