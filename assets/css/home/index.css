@@ -14,6 +14,7 @@ header{
     width: 100%;
     height: 1.2rem;
     background: rgb(253,253,253);
+    z-index: 99999;
 }
 
 header > div{
@@ -61,8 +62,27 @@ header > div >ul > li > a{
     color:#999999;
 }
 
+header > div >ul > li > a:hover{
+    border:1px solid red;
+}
+
 /*-------------------header结束--------------*/
 
+#theme{
+    width: 100%;
+    height: 4.5rem;
+    background-color: #ab7aad;
+    text-align: center;
+    font-size: 0.5rem;
+    line-height: 4.5rem;
+}
+
+#content{
+    width: 80%;
+    height: 2000px;
+    background: #db8992;
+    margin-left: 10%;
+}
 
 
 
@@ -76,6 +96,7 @@ header > div >ul > li > a{
 
 
 
+/*--------------------------------------------------*/
 .pub_abs{
     position: absolute;
     top:0;
