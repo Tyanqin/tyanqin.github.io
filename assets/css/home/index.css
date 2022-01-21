@@ -74,8 +74,18 @@ header > div >ul > li > a:hover{
     height: 4.5rem;
     /*background-color: #ab7aad;*/
     text-align: center;
+    cursor: pointer;
     font-size: 0.5rem;
     line-height: 4.5rem;
+    transition: all 2s;
+}
+
+#theme:hover{
+    transform:rotate(7deg);
+    -ms-transform:rotate(7deg); 	/* IE 9 */
+    -moz-transform:rotate(7deg); 	/* Firefox */
+    -webkit-transform:rotate(7deg); /* Safari 和 Chrome */
+    -o-transform:rotate(7deg); 	/* Opera */
 }
 
 #content{
