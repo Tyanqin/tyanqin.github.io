@@ -1,7 +1,7 @@
 #box{
     width: 100%;
     height: 50rem;
-    background: #F8F8F8;
+    background: #FDFDFD;
 }
 
 /*-------------------header开始--------------*/
@@ -13,7 +13,8 @@ header{
     bottom: 0;
     width: 100%;
     height: 1.2rem;
-    background: rgb(253,253,253);
+    /*background: rgb(253,253,253);*/
+    background: #FDFDFD;
     z-index: 99999;
 }
 
@@ -59,7 +60,7 @@ header > div >ul > li{
 
 header > div >ul > li > a{
     font-size: 0.16rem;
-    color:#999999;
+    color:#434344;
 }
 
 header > div >ul > li > a:hover{
@@ -71,19 +72,30 @@ header > div >ul > li > a:hover{
 #theme{
     width: 100%;
     height: 4.5rem;
-    background-color: #ab7aad;
+    /*background-color: #ab7aad;*/
     text-align: center;
     font-size: 0.5rem;
     line-height: 4.5rem;
 }
 
 #content{
-    width: 80%;
-    height: 2000px;
-    background: #db8992;
-    margin-left: 10%;
+    width: 100%;
+    /*height: 2000px;*/
+    /*background: #db8992;*/
+    /*margin-left: 10%;*/
+    overflow: hidden;
+}
+#content > img{
+    width: 100%;
+    cursor: pointer;
+    transition: all 2s;
+    -ms-transition: all 2s;
 }
 
+#content > img:hover{
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
 
 
 
