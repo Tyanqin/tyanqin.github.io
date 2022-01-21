@@ -51,6 +51,8 @@ header > div >ul > li{
     /*background-color: #47D3E5;*/
     height: 0.3rem;
     line-height: 0.3rem;
+    font-size: 0.16rem;
+    color:#999999;
 }
 
 header > div >ul > li > a{
