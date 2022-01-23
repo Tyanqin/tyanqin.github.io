@@ -1,9 +1,9 @@
+body{
+    background: #000000;
+}
 #box{
     width: 100%;
-    height: 50rem;
-    background: #FDFDFD;
-    /*padding-top: 0.5rem;*/
-    /*box-sizing: border-box;*/
+    /*height: 55.5rem;*/
 }
 
 /*-------------------header开始--------------*/
@@ -73,11 +73,12 @@ header > div >ul > li > a:hover{
 
 .theme{
     width: 100%;
-    height: 3.5rem;
+    height: 4rem;
     text-align: center;
     cursor: pointer;
     font-size: 0.5rem;
-    line-height: 3.5rem;
+    line-height: 4rem;
+    background: #FDFDFD;
     /*background: #ab7aad;*/
     /*transition: all 2s;*/
 }
@@ -92,9 +93,10 @@ header > div >ul > li > a:hover{
 
 .content{
     width: 100%;
-    height: 715px;
+    height: 7.15rem;
     overflow: hidden;
-    background: #db8992;
+    background: #FDFDFD;
+    /*background: #db8992;*/
 }
 .content > img{
     width: 100%;
@@ -108,37 +110,17 @@ header > div >ul > li > a:hover{
     -ms-transform: scale(1.1);
 }
 
-
-
-
-
-
-
-
-
+#footer{
+    width: 100%;
+    /*height: 7rem;*/
+    height: 5rem;
+    /*background-color: pink;*/
+    /*background: url("/images/theme/dff64405b7d9043d90fcf3e102c26195.jpg") no-repeat;*/
+}
 
 
 
 /*--------------------------------------------------*/
-.pub_abs{
-    position: absolute;
-    top:0;
-    left:0;
-    right: 0;
-    bottom: 0;
-    margin:auto;
-}
-
-.pub_rel{
-    position: relative;
-}
-
-
-.pub_fix{
-    position: fixed;
-    top:0;
-    left:0;
-    right: 0;
-    bottom: 0;
-    margin: 0 auto;
-}
+.pub_abs{position: absolute;top:0;left:0;right: 0;bottom: 0;margin:auto;}
+.pub_rel{position: relative;}
+.pub_fix{position: fixed;top:0;left:0;right: 0;bottom: 0;margin: 0 auto;}

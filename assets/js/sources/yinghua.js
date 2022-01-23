@@ -110,20 +110,22 @@ function getRandom(option) {
 }
 
 function startSakura() {
-
+    var remVal = 1000 / 10;
     requestAnimationFrame = window.requestAnimationFrame ||
         window.mozRequestAnimationFrame ||
         window.webkitRequestAnimationFrame ||
         window.msRequestAnimationFrame ||
         window.oRequestAnimationFrame;
-    var canvas = document.createElement('canvas'),
-        cxt;
+    var canvas = document.createElement('canvas');
+    var footer = document.getElementById("footer")
     staticx = true;
     canvas.height = window.innerHeight;
     canvas.width = window.innerWidth;
-    canvas.setAttribute('style', 'position: fixed;left: 0;top: 0;pointer-events: none;');
+    // canvas.height = parseInt(getStyle(footer,"width"));
+    // canvas.width = parseInt(getStyle(footer,"height"))
     canvas.setAttribute('id', 'canvas_sakura');
-    document.getElementsByTagName('body')[0].appendChild(canvas);
+    footer.appendChild(canvas);
+    canvas.setAttribute('style','position:absolute;left:-1rem;top:0;right:0;bottom:0;')
     cxt = canvas.getContext('2d');
     var sakuraList = new SakuraList();
     for(var i = 0; i < 50; i++) {
@@ -157,9 +159,14 @@ function startSakura() {
 }
 
 window.onresize = function() {
-    var canvasSnow = document.getElementById('canvas_snow');
+    // canvas_snow  canvas_sakura
+    var canvasSnow = document.getElementById('canvas_sakura');
+    var footer = document.getElementById("footer")
     canvasSnow.width = window.innerWidth;
     canvasSnow.height = window.innerHeight;
+
+    // canvasSnow.width = parseInt(getStyle(footer,"width"));
+    // canvasSnow.height = parseInt(getStyle(footer,"height"));
 }
 
 img.onload = function() {
