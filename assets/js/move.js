@@ -8,7 +8,6 @@
  */
 function movePx(obj, attr, target, speed, callback) {
 	clearInterval(obj.timer);
-    console.log(234)
 	var current = parseInt(getStyle(obj, attr));
 	if(current > target) {
 		speed = -speed;
@@ -32,26 +31,37 @@ function movePx(obj, attr, target, speed, callback) {
 
 
   function moveRem(obj, attr, target, speed, callback) {
-	  clearInterval(obj.timer);
-	  var current = parseInt(getStyle(obj, attr));
-	  if(current > target) {
-		  speed = -speed;
-	  }
+	  target = target/100
+	  speed = speed/100
+	  // clearInterval(obj.timer);
+	  var current = parseInt(getStyle(obj, attr))/100;
 
-	  obj.timer = setInterval(function() {
-		  var oldValue = parseInt(getStyle(obj, attr));
-		  var newValue = oldValue + speed;
+	  console.log("target:",target,"speed:",speed,"current:",current)
 
-		  if((speed < 0 && newValue < target) || (speed > 0 && newValue > target)) {
-			  newValue = target;
-		  }
-
-		  obj.style[attr] = newValue + "rem";
-		  if(newValue == target) {
-			  clearInterval(obj.timer);
-			  callback && callback();
-		  }
-	  }, 5);
+	  // if(current > target) {
+		//   speed = -speed;
+	  // }
+	  //
+	  // obj.timer = setInterval(function() {
+		//   var oldValue = parseInt(getStyle(obj, attr))/100;
+		//   var newValue = oldValue + speed;
+	  //
+		//   console.log("oldValue====>   "+oldValue)
+		//   console.log("newValue====>   "+newValue)
+		//   console.log("current----->   "+current)
+	  //
+		//   if((speed < 0 && newValue < target) || (speed > 0 && newValue > target)) {
+		// 	  newValue = target;
+		//   }
+	  //
+		//   obj.style[attr] = newValue + "rem";
+		//   console.log("obj.style[attr]====>   "+newValue+"rem")
+		//   console.log("target====>   "+target+"rem")
+		//   if(newValue == target) {
+		// 	  clearInterval(obj.timer);
+		// 	  callback && callback();
+		//   }
+	  // }, 50);
   };
 
 function getStyle(obj, name) {
