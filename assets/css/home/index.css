@@ -33,6 +33,7 @@ header > div{
 }
 
 .log > a{color:#434344;}
+.log > a > p{text-decoration: underline;}
 
 header > div > ul{
     position: absolute;
